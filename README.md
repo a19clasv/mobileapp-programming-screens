@@ -60,8 +60,16 @@ activity_second.xml som har en tom TextView i mitten av skärmen för SecondActi
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-Button med button som har button som ID och "SecondActivity_button" som text.
+Tog bort en TextView med texten "Hello World!" med en Button som har button som ID och "SecondActivity_button" som text.
 ```
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -71,6 +79,8 @@ Button med button som har button som ID och "SecondActivity_button" som text.
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
 En "switchActivity" Button kopplad till "button" som startar en SecondActivity och skickar med namnet "Screen" samt numret 2.
